@@ -1,11 +1,9 @@
 # DGUS-reloaded NWa Version
 
 For 480x480 display
-
 Laser and 3D printer mode
-https://github.com/nwaelti/Marlin
 
-DWIN T5L touchscreen firmware for 3D printers running Marlin.
+DWIN T5L touchscreen firmware for 3D printers/Laser running Marlin.
 
 Requires using a modified version of Marlin to work properly, which can be found in [this repository](https://github.com/nwaelti/Marlin).
 
@@ -20,7 +18,7 @@ This firmware was inspired by Creality printers' touchscreen firmware. Some feat
 * Z offset, manual and automatic leveling
 * User confirmation screen (used by the filament runout procedure for example)
 * Power loss recovery
-* Custom G-code input (requires [updating the touchscreen's core firmware](https://github.com/Desuuuu/DGUS-reloaded/wiki/Flashing-the-touchscreen-GUI-and-OS-firmware))
+* Custom G-code input (requires updating the touchscreen's core firmware (Work-In-Progress))
 * PID autotuning
 * Volume adjustment (saved to EEPROM)
 * Brightness adjustment (saved to EEPROM)
@@ -36,6 +34,7 @@ This firmware **should** be compatible with printers equipped with the following
 
 * 480x480 DWIN T5L touchscreen
 * Single extruder
+* Laser
 * Heated bed
 * Single controllable fan
 * Bed leveling sensor (including a BLTouch)
@@ -43,16 +42,11 @@ This firmware **should** be compatible with printers equipped with the following
 It **could** also work on machines equipped with more hardware (dual extruder, etc.) but will lack on-screen controls for such hardware.
 
 ## Prerequisites
-You have to compile and flash this [modified version of Marlin](https://github.com/Desuuuu/Marlin) with `DGUS_LCD_UI_RELOADED` defined in the configuration.
+You have to compile and flash this [modified version of Marlin](https://github.com/nwaelti/Marlin) with `DGUS_LCD_UI_RELOADED` defined in the configuration.
 
-Example Marlin configurations are available in [this repository](https://github.com/Desuuuu/DGUS-reloaded-config).
-
-## Wiki
-* [Flashing the firmware](https://github.com/Desuuuu/DGUS-reloaded/wiki/Flashing-the-firmware)
-* [Flashing the T5 GUI and OS firmware](https://github.com/Desuuuu/DGUS-reloaded/wiki/Flashing-the-T5-GUI-and-OS-firmware)
 
 ## Modification / Compilation
-You can make modifications to the firmware by opening the `DWprj.hmi` file in **DGUS Tools**.
+You can make modifications to the firmware by opening the `Project.dgus` file in **DGUS Tools v8.0.11**.
 
 After finishing your modifications, you will need to press the *Generate* button to create the 3 required binary files.
 
