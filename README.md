@@ -1,8 +1,13 @@
-# DGUS-reloaded
+# DGUS-reloaded NWa Version
 
-DWIN T5UID1 touchscreen firmware for 3D printers running Marlin.
+For 480x480 display
 
-Requires using a modified version of Marlin to work properly, which can be found in [this repository](https://github.com/Desuuuu/Marlin).
+Laser and 3D printer mode
+https://github.com/nwaelti/Marlin
+
+DWIN T5L touchscreen firmware for 3D printers running Marlin.
+
+Requires using a modified version of Marlin to work properly, which can be found in [this repository](https://github.com/nwaelti/Marlin).
 
 ## Disclaimer
 **This software is provided without any warranty. You are solely responsible for your use of it.**
@@ -29,19 +34,13 @@ Focus was also put on making this firmware as easy and safe to use as possible f
 ## Compatibility
 This firmware **should** be compatible with printers equipped with the following hardware:
 
-* 480x272 DWIN T5UID1 touchscreen
+* 480x480 DWIN T5L touchscreen
 * Single extruder
 * Heated bed
 * Single controllable fan
 * Bed leveling sensor (including a BLTouch)
 
 It **could** also work on machines equipped with more hardware (dual extruder, etc.) but will lack on-screen controls for such hardware.
-
-Testing has been done on the following machines:
-
-* Creality CR-10S Pro
-* Creality CR-10S Pro V2
-* Creality Ender 5 Plus
 
 ## Prerequisites
 You have to compile and flash this [modified version of Marlin](https://github.com/Desuuuu/Marlin) with `DGUS_LCD_UI_RELOADED` defined in the configuration.
